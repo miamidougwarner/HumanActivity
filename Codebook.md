@@ -29,10 +29,11 @@ destination.dir - directory on my local machine where the data shall be saved an
 
 
 ##Intermediate Variables
-feature.table - reads and loads the 561 types of measurements taken. 
+feature.table - reads and loads the 561 types of measurements taken.
+
 unique.column.names - Output from make.names() on the 561 values in feature.table. R has specific requirements for column names.
 
-[training/test].measurements - contain the 561 normalized values for each activity and each volunteer.
+[training/test].measurements - contains the 561 normalized values for each activity and each volunteer.
 
 activity.label.table - contains the mapping for the activity identifiers. eg. "walking" & "sitting"
 
@@ -46,10 +47,12 @@ all.volunteers.dataset - the combination of the training.dataset and test.datase
 
 all.volunteers.mean.std - The result of the all.volunteers.dataset with only the mean() and std() related columns.
 
-all.volunteers.mean - The standard deviation columns have been removed from all.volunteers.mean.std.
+all.volunteers.mean - The standard deviation columns that have been removed from all.volunteers.mean.std.
 
 temp - adds a means column  with all average of all the normalized mean values.
+
 temp.means - Only need: volunteer.id, activity.description & means columns
+
 temp.melt - Melt the dataset. Force the column 'means' into the 'value' column
 
 consolidated.mean.by.activity - Associate the means value for each volunteer and for each activity
