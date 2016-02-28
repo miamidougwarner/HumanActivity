@@ -11,7 +11,7 @@ run_analysis.R - top level script showing each project question and the code tha
 
 These functions must be sourced prior to executing run_analysis.R:
 
-download.project.data.R - retrieves the experiment files from the URL provided in the assignemnt. The files are available as a zip file. This function downloads the zip file, and unpacks it in a directory (destination.dir).
+download.project.data.R - retrieves the experiment files from the URL provided in the assignment. The files are available as a zip file. This function downloads the zip file, and unpacks it in a directory (destination.dir).
 
 get.activity.data.R - reads and loads the activity identifiers (IDs) into their own data frame.
 
