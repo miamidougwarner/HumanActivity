@@ -88,6 +88,9 @@ potentially be used later for analysis.
 
 Below is an  independent tidy data set with the average of each variable for each activity and each subject.
 
+The values are averaged normalized values. For example, all the mean() normalized values for volunteer 1 into a single normalized value. What is presented in the tidy data set is a mean of means for each subject and for each activity. (The variable is the activity.)
+
+
 This dataset is tidy because:
 1. Each variable (activity) forms a column
 2. Each observation (volunteer or subject from the experiment) forms a row
